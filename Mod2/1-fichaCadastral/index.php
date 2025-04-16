@@ -13,20 +13,11 @@ $salarioAnual = 12 * $salarioMensal;
 $salarioAnualExibir = number_format($salarioAnual, 2, ",", ".");
 
 $statusEmprego = true;
-if($statusEmprego){
-  $testoStatusEmprego = "Empregado" ;
-} else {
-  $testoStatusEmprego = "Desempregado";
-}
+$textoStatusEmprego = ($statusEmprego)? "Empregado" : "Desempregado";
 
 define('IDADE_APOSENTADORIA_MASCULINA', 65);
 define('IDADE_APOSENTADORIA_FEMININA', 62);
-
-if($sexo == 'M') {
-  $anosParaAposentadoria = IDADE_APOSENTADORIA_MASCULINA;
-} else {
-  $anosParaAposentadoria = IDADE_APOSENTADORIA_FEMININA;
-}
+$anosParaAposentadoria = ($sexo == 'M') ? IDADE_APOSENTADORIA_MASCULINA : IDADE_APOSENTADORIA_FEMININA;
 $anosParaAposentadoria -= $idade;
 
 $habilidades = ['PHP', 'Javascript', 'HTML', 'CSS'];
@@ -84,9 +75,9 @@ $habilidades = ['PHP', 'Javascript', 'HTML', 'CSS'];
       <p>Sexo: <strong><?= $sexo; ?></strong></p>
       <p>Salário Mensal: <strong>R$<?= $salarioMensalExibir; ?></strong></p>
       <p>Salário Anual: <strong>R$<?= $salarioAnualExibir; ?></strong></p>
-      <p>Status de Emprego: <strong><?= $testoStatusEmprego ?></strong></p>
+      <p>Status de Emprego: <strong><?= $textoStatusEmprego ?></strong></p>
       <p>Anos para aposentadoria: <strong><?= $anosParaAposentadoria; ?></strong></p>
-      <p>Habilidades: <strong><?= implode(", ", $habilidades); # Pega o array e adiciona o separador entre os elementos?></strong></p>
+      <p>Habilidades: <strong><?= implode(", ", $habilidades); # implode() - pega o array e adiciona o separador entre os elementos?></strong></p>
     </div>
   </div>
 </body>
