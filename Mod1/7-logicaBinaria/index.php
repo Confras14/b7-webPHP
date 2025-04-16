@@ -3,12 +3,12 @@
 $estagiario = true;
 
 var_dump($estagiario);
-echo '<br />';
+echo '<br>';
 var_export($estagiario);
-echo '<br />';
+echo '<br>';
 
 echo $estagiario;
-echo '<br />';
+echo '<br>';
 
 if ($estagiario) {
   echo "Sera que imprime?";

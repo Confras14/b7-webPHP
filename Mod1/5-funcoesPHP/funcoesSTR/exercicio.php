@@ -4,10 +4,10 @@
 # Utilize somente as funcoes strlen(), strpos() e substr()
 
 $frase = "O rato roeu a roupa do rei de roma.";
-echo "$frase <br/>";
+echo "$frase <br>";
 
 $palavraEscolhida = "roeu";
-echo "$palavraEscolhida <br/>";
+echo "$palavraEscolhida <br>";
 
 $tamanhoPalavraEscolhida = strlen($palavraEscolhida);
 $indicePalavraEscolhida = strpos($frase, $palavraEscolhida);
@@ -17,5 +17,5 @@ $indiceFimProximaPalavra = strpos($frase, " ", $indiceProximaPalavra);
 $tamanhoProxPalavra = $indiceFimProximaPalavra - $indiceProximaPalavra + 1;
 $proximaPalavra = substr($frase, $indiceProximaPalavra, $tamanhoProxPalavra);
 
-echo "$proximaPalavra <br/>";
+echo "$proximaPalavra <br>";
 ?>

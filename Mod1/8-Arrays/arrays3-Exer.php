@@ -2,7 +2,7 @@
 
 # Exercio 1
 $cidades = ["São Paulo", "Londres", "Berlim", "Osaka", "Cusco"];
-echo $cidades[2].'<br />';
+echo $cidades[2].'<br>';
 
 # Exercio 2
 $alunos = [
@@ -11,7 +11,7 @@ $alunos = [
   "Gustavo" => 11,
 ];
 
-echo $alunos["Julio"].'<br />';
+echo $alunos["Julio"].'<br>';
 
 # Exercio 3
 $cores = ["Preto", "Branco", "Cinza"];
@@ -23,7 +23,7 @@ array_push($cores, "Rosa");
 array_shift($cores);
 
 print_r($cores);
-echo'<br />';
+echo'<br>';
 
 # Exerciio 4
 $produtos = [

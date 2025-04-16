@@ -6,31 +6,31 @@ $valor2 = 11;
 # Arredondamento
 ## Concatenacao
 echo $valor1.$valor2;
-echo "<br/>";
+echo "<br>";
 
 ## Adicao
 echo $valor1+$valor2;
-echo "<br/>";
+echo "<br>";
 
 ## Subtracao
 echo $valor1-$valor2;
-echo "<br/>";
+echo "<br>";
 
 ## Multiplicacao
 echo $valor1*$valor2;
-echo "<br/>";
+echo "<br>";
 
 ## Divisao
 echo $valor1/$valor2;
-echo "<br/>";
+echo "<br>";
 
 ## Exponenciacao
 echo $valor1**$valor2;
-echo "<br/>";
+echo "<br>";
 
 ## Resto
 echo $valor1%$valor2;
-echo "<br/>";
+echo "<br>";
 
 
 # Arredondamento 
@@ -39,20 +39,20 @@ $valor4 = 2.1;
 
 ## round() - Arredonda um numero
 echo round($valor3);
-echo "<br/>";
+echo "<br>";
 echo round($valor4);
-echo "<br/>";
+echo "<br>";
 
 ## floor() - Arredonda pra baixo
 echo floor($valor3);
-echo "<br/>";
+echo "<br>";
 echo floor($valor4);
-echo "<br/>";
+echo "<br>";
 
 ## ceil() - Arredonda pra cima
 echo ceil($valor3);
-echo "<br/>";
+echo "<br>";
 echo ceil($valor4);
-echo "<br/>";
+echo "<br>";
 
 ?>

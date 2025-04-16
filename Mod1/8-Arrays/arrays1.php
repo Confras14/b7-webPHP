@@ -47,9 +47,9 @@ $pessoas = [
 
 echo '<pre>'; // Tag HTML para deixar o texto preformatado
   var_dump($pessoas); // Exibe a array (ja que o echo nao funciona)
-  echo "<br/>";
+  echo "<br>";
   var_dump($pessoas["Lucas"]);
-  echo "<br/>";
+  echo "<br>";
   var_dump($pessoas["Pedro"]["idade"]);
 echo '<pre/>';
 
